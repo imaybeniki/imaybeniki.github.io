@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Homepage from './pages/homepage/Homepage';
+import { Homepage } from './pages/homepage/Homepage';
 
 export default class App extends Component {
     /**
