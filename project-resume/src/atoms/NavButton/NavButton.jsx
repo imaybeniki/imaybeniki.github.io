@@ -1,5 +1,5 @@
 import React from 'react';
-import Timeline from '../ImageFiles/timeline';
+import Timeline from '../ImageFiles/Timeline/Timeline';
 
 export function NavButton(props) {
 
