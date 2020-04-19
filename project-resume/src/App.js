@@ -12,10 +12,12 @@ export default class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" render={() => <Homepage />} />
-                    <Route path="/poems" render={() => <homepage />} />
                     <Route path="/timeline" render={() => <homepage />} />
+                    <Route path="/me" render={() => <homepage />} />
                     <Route path="/projects" render={() => <homepage />} />
-                    <Route path="/art" render={() => <homepage />} />
+                    <Route path="/education" render={() => <homepage />} />
+                    <Route path="/meta" render={() => <homepage />} />
+                    <Route path="/learn" render={() => <homepage />} />
                 </Switch>
             </BrowserRouter>
          )

@@ -6,7 +6,7 @@ export function Education(props) {
 
     return (
         <svg 
-            id="Education" 
+            id="education" 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 81.75 81.75"
             className={className}
