@@ -7,16 +7,40 @@ export function Homepage(props) {
   return (
     <div className="homepage-outer-flexbox">
       <div className="homepage-row-one">
-        <NavButton icon="timeline"/>
-        <NavButton icon="me"/>
+        <NavButton 
+          icon="timeline"
+          height={20}
+          width={20}
+        />
+        <NavButton 
+          icon="me" 
+          height={20}
+          width={20}
+        />
       </div>
-      <div className="homepage-row-two">>
-        <NavButton icon="projects"/>
-        <NavButton icon="education"/>
+      <div className="homepage-row-two">
+        <NavButton 
+          icon="projects" 
+          height={20}
+          width={20}
+        />
+        <NavButton 
+          icon="education" 
+          height={20}
+          width={20}
+        />
       </div>
-      <div className="homepage-row-three">>
-        <NavButton icon="meta"/>
-        <NavButton icon="learn"/>
+      <div className="homepage-row-three">
+        <NavButton 
+          icon="meta" 
+          height={20}
+          width={20}
+        />
+        <NavButton 
+          icon="learn" 
+          height={20}
+          width={20}
+        />
       </div>
     </div>
   );

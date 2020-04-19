@@ -1,4 +1,5 @@
 import React from 'react';
+import './meta.css';
 
 export function Meta(props) {
 

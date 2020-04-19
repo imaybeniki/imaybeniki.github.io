@@ -1,4 +1,5 @@
 import React from 'react';
+import './me.css';
 
 export function Me(props) {
 
