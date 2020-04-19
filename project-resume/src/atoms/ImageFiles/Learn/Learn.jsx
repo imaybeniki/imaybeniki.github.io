@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Timeline(props) {
+export function Learn(props) {
 
     const { className, height, width } = props;
 
