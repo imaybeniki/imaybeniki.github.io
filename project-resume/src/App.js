@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Homepage } from './pages/homepage/Homepage';
-import { Timeline } from './pages/timeline/Timeline';
+import Timeline from './pages/timeline/Timeline';
 
 export default class App extends Component {
     /**
@@ -17,8 +17,9 @@ export default class App extends Component {
                     <Route path="/me" render={() => <homepage />} />
                     <Route path="/projects" render={() => <homepage />} />
                     <Route path="/education" render={() => <homepage />} />
-                    <Route path="/meta" render={() => <homepage />} />
                     <Route path="/learn" render={() => <homepage />} />
+                    <Route path="/meta" render={() => <homepage />} />
+                    
                 </Switch>
             </BrowserRouter>
          )

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { NavButton } from '../../atoms/NavButton/NavButton';
 
 export function Homepage(props) {
-  const { selection } = props;
 
   return (
     <div className="homepage-outer-flexbox">
@@ -31,13 +30,13 @@ export function Homepage(props) {
         />
       </div>
       <div className="homepage-row-three">
-        <NavButton 
-          icon="meta" 
+      <NavButton 
+          icon="learn" 
           height={20}
           width={20}
         />
         <NavButton 
-          icon="learn" 
+          icon="meta" 
           height={20}
           width={20}
         />
