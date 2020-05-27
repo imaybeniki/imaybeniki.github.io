@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Homepage } from './pages/homepage/Homepage';
+import { Timeline } from './pages/timeline/Timeline';
 
 export default class App extends Component {
     /**
@@ -12,7 +13,7 @@ export default class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" render={() => <Homepage />} />
-                    <Route path="/timeline" render={() => <homepage />} />
+                    <Route path="/timeline" render={() => <Timeline />} />
                     <Route path="/me" render={() => <homepage />} />
                     <Route path="/projects" render={() => <homepage />} />
                     <Route path="/education" render={() => <homepage />} />

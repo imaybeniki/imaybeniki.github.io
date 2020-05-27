@@ -8,7 +8,7 @@ import { Projects } from '../ImageFiles/Projects/Projects';
 
 export function NavButton(props) {
 
-    const { icon } = props;
+    const { className, history, icon } = props;
 
     const svgOptions = {
         timeline: Timeline,
@@ -20,5 +20,12 @@ export function NavButton(props) {
     }
 
     const Icon = svgOptions[icon];
-    return <Icon icon={`${icon}`} />
+    return (
+        <div
+            onClick={() => history.push(className)}
+            onButtonPress={() => history.push(className)}
+        >
+            <Icon icon={`${icon}`} />
+        </div>          
+    )
 }

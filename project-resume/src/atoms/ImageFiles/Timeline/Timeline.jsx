@@ -9,7 +9,7 @@ export function Timeline(props) {
         <svg 
             id="timeline" 
             xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 81.75 81.75"
+            viewBox={`0 0 ${width} ${height}`}
             className={className}
             height={height}
             width={width}
