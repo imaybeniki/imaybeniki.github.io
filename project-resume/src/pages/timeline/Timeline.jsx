@@ -7,7 +7,7 @@ export default class Timeline extends Component {
     
      render() {
          return(
-            <div>Hello</div>
+            <div>Timeline Page</div>
          )
      }
 }

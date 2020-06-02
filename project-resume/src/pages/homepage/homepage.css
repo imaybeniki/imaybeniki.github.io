@@ -1,0 +1,22 @@
+.homepage-outer-flexbox { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.homepage-row-one {
+    display: flex;
+    flex-direction: row;
+    flex: 1
+}
+
+.homepage-row-two {
+    display: flex;
+    flex-direction: row;
+    flex: 1
+}
+
+.container {
+    margin-bottom: 35px;
+    margin-right: 25px;
+}
