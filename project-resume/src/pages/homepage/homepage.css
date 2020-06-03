@@ -1,22 +1,34 @@
 .homepage-outer-flexbox { 
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .homepage-row-one {
     display: flex;
     flex-direction: row;
-    flex: 1
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .homepage-row-two {
     display: flex;
     flex-direction: row;
-    flex: 1
+    flex: 1;
 }
 
 .container {
-    margin-bottom: 35px;
-    margin-right: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 20%;
+}
+
+.container > img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.container > img:hover { 
+    max-width: 90%;
+    max-height: 90%;
 }

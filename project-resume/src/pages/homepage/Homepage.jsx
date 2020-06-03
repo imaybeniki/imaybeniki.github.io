@@ -1,33 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React, {Component} from 'react';
 import { NavButton } from '../../atoms/NavButton/NavButton';
 import './homepage.css';
 
-export function Homepage(props) {
+export default class Homepage extends Component{
 
-  return (
-    <div className="homepage-outer-flexbox">
-      <div className="homepage-row-one">
-        <NavButton 
-          icon="timeline"
-        />
-        <NavButton 
-          icon="me" 
-        />
-        <NavButton 
-          icon="learn" 
-        />
+  render () {
+
+    const { history } = this.props;
+
+    return (
+      <div className="homepage-outer-flexbox">
+        <div className="homepage-row-one">
+          <NavButton 
+            icon="timeline"
+            history={history}
+          />
+          <NavButton 
+            icon="me" 
+            history={history}
+          />
+          <NavButton 
+            icon="learn" 
+            history={history}
+          />
+        </div>
+        <div className="homepage-row-two">
+          <NavButton 
+            icon="meta" 
+            history={history}
+          />
+          <NavButton 
+            icon="projects" 
+            history={history}
+          />
+          <NavButton 
+            icon="education" 
+            history={history}
+          />
+        </div>
       </div>
-      <div className="homepage-row-two">
-        <NavButton 
-          icon="meta" 
-        />
-        <NavButton 
-          icon="projects" 
-        />
-        <NavButton 
-          icon="education" 
-        />
-      </div>
-    </div>
-  );
+    );
+  }
 }
