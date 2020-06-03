@@ -1,14 +1,20 @@
+.full-page {
+    max-height: 100vh;
+    overflow: auto;
+}
+
 .homepage-outer-flexbox { 
     display: flex;
     flex-direction: column;
+    vertical-align: middle;
+    top: 50%;
+    bottom: 50%;
 }
 
 .homepage-row-one {
     display: flex;
     flex-direction: row;
     flex: 1;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .homepage-row-two {
@@ -24,11 +30,11 @@
 }
 
 .container > img {
-    max-width: 85%;
-    max-height: 85%;
+    max-width: 65%;
+    max-height: 65%;
 }
 
 .container > img:hover { 
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 70%;
+    max-height: 70%;
 }
