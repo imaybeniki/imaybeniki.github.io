@@ -9,6 +9,7 @@
     font-size: 40px;
     color: #f05a22;
     font-family: "Lucida Console", Courier, monospace;
+    margin-bottom: 30px;
   }
   .sticky {
     position: fixed;
