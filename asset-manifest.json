@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/project-resume/static/css/main.0c6f3504.chunk.css",
+    "main.js": "/project-resume/static/js/main.26e90448.chunk.js",
+    "main.js.map": "/project-resume/static/js/main.26e90448.chunk.js.map",
+    "runtime-main.js": "/project-resume/static/js/runtime-main.978fa866.js",
+    "runtime-main.js.map": "/project-resume/static/js/runtime-main.978fa866.js.map",
+    "static/js/2.aecde58b.chunk.js": "/project-resume/static/js/2.aecde58b.chunk.js",
+    "static/js/2.aecde58b.chunk.js.map": "/project-resume/static/js/2.aecde58b.chunk.js.map",
+    "index.html": "/project-resume/index.html",
+    "precache-manifest.080019e97bdea49d5a0e770abe4c94da.js": "/project-resume/precache-manifest.080019e97bdea49d5a0e770abe4c94da.js",
+    "service-worker.js": "/project-resume/service-worker.js",
+    "static/css/main.0c6f3504.chunk.css.map": "/project-resume/static/css/main.0c6f3504.chunk.css.map",
+    "static/js/2.aecde58b.chunk.js.LICENSE.txt": "/project-resume/static/js/2.aecde58b.chunk.js.LICENSE.txt",
+    "static/media/education.png": "/project-resume/static/media/education.05e2b188.png",
+    "static/media/learn.png": "/project-resume/static/media/learn.e33b6dca.png",
+    "static/media/meta.png": "/project-resume/static/media/meta.19a9e00d.png",
+    "static/media/projects.png": "/project-resume/static/media/projects.75d10dcb.png",
+    "static/media/timeline.png": "/project-resume/static/media/timeline.567afd4c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.978fa866.js",
+    "static/js/2.aecde58b.chunk.js",
+    "static/css/main.0c6f3504.chunk.css",
+    "static/js/main.26e90448.chunk.js"
+  ]
+}
