@@ -35,6 +35,5 @@
 }
 
 .container > img:hover { 
-    max-width: 70%;
-    max-height: 70%;
+    transform: scale(1.1);
 }
