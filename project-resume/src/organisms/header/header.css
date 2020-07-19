@@ -5,10 +5,10 @@
     font-weight: 600;
     height: 60px;
     line-height: 20px;
-    background-color: #20716a;
+    background-color:#6dc7be;
     font-size: 40px;
-    color: #ffd36b;
-    font-family: "Patrick Hand", cursive;
+    color: #f05a22;
+    font-family: "Lucida Console", Courier, monospace;
   }
   .sticky {
     position: fixed;
