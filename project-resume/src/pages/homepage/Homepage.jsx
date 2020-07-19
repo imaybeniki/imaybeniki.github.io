@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { NavButton } from '../../atoms/NavButton/NavButton';
-import { Header } from '../../molecules/header/Header'
+import Header from '../../organisms/header/Header'
 import './homepage.css';
 
 export default class Homepage extends Component{
