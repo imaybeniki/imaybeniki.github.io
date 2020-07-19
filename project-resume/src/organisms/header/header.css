@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    height: 60px;
+    line-height: 20px;
+    background-color:#6dc7be;
+    font-size: 40px;
+    color: #0c0b0b;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 30px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  

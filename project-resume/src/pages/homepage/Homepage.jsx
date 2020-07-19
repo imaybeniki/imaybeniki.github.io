@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { NavButton } from '../../atoms/NavButton/NavButton';
-import { Header } from '../../molecules/header/Header'
+import Header from '../../organisms/header/Header'
 import './homepage.css';
 
 export default class Homepage extends Component{
@@ -11,7 +11,7 @@ export default class Homepage extends Component{
 
     return (
       <div className="full-page">
-        <Header primaryTitle="Nicole May" secondaryTitle="Interactive Resume"/>
+        <Header stickyHeaderText="Home" unstickyHeaderText="Nicole May"/>
         <div className="homepage-outer-flexbox">
           <div className="homepage-row-one">
             <NavButton 
