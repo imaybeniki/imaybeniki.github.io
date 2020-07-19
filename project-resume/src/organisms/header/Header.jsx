@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./header.css";
-import HeaderContent from '../../molecules/header/HeaderContent';
 
 function Header(props) {
   const {stickyHeaderText, unstickyHeaderText} = props;
@@ -30,7 +29,7 @@ function Header(props) {
   return (
     <div>
       <header id="myHeader" className="header">
-        <HeaderContent />
+        {headerText}
       </header>
     </div>
   );

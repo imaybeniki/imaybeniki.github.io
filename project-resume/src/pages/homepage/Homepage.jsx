@@ -11,7 +11,7 @@ export default class Homepage extends Component{
 
     return (
       <div className="full-page">
-        <Header primaryTitle="Nicole May" secondaryTitle="Interactive Resume"/>
+        <Header stickyHeaderText="Home" unstickyHeaderText="Nicole May"/>
         <div className="homepage-outer-flexbox">
           <div className="homepage-row-one">
             <NavButton 
