@@ -10,7 +10,7 @@ import Footer from './organisms/footer/Footer';
 
 ReactDOM.render(
     <div>
-        <BrowserRouter forceRefresh={true} basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename="https://imaybeniki.github.io/">
             <Switch>
                 <Route path="/timeline" component={Timeline} />
                 <Route path="/me" component={Me} />
