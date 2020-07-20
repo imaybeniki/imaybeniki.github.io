@@ -1,3 +1,13 @@
-.url-list{
+a:visited{
+    color: #C1666B;
     font-size: medium;
+}
+
+a:link{
+    color: #C1666B;
+    font-size: medium;
+}
+
+.url-list{
+    color: #4281A4;
 }

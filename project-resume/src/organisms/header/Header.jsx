@@ -29,7 +29,7 @@ function Header(props) {
   return (
     <div>
       <header id="myHeader" className="header">
-        {headerText}
+        <h2><span>{headerText}</span></h2>
       </header>
     </div>
   );
