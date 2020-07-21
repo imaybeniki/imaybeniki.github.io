@@ -7,10 +7,11 @@ import Homepage from './pages/homepage/Homepage';
 import Timeline from './pages/timeline/Timeline';
 import Me from './pages/me/Me';
 import Footer from './organisms/footer/Footer';
+import global from './global.json';
 
 ReactDOM.render(
     <div>
-        <BrowserRouter basename="https://imaybeniki.github.io/">
+        <BrowserRouter basename={global.isProd ? "https://imaybeniki.github.io" : "http://localhost:3000"}>
             <Switch>
                 <Route path="/timeline" component={Timeline} />
                 <Route path="/me" component={Me} />
