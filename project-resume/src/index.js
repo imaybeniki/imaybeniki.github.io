@@ -7,7 +7,6 @@ import Homepage from './pages/homepage/Homepage';
 import Timeline from './pages/timeline/Timeline';
 import Me from './pages/me/Me';
 import Footer from './organisms/footer/Footer';
-import global from './global.json';
 
 ReactDOM.render(
     <div>
