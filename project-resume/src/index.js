@@ -11,7 +11,7 @@ import global from './global.json';
 
 ReactDOM.render(
     <div>
-        <BrowserRouter basename={global.isProd ? "https://imaybeniki.github.io" : "http://localhost:3000"}>
+        <BrowserRouter basename={global.isProd ? global.prodBaseUrl : global.devBaseUrl}>
             <Switch>
                 <Route path="/timeline" component={Timeline} />
                 <Route path="/me" component={Me} />

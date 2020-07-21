@@ -1,3 +1,5 @@
 {
-    "isProd": true
+    "isProd": true,
+    "prodBaseUrl": "https://imaybeniki.github.io/",
+    "devBaseUrl": "http://localhost:3000/"
 }
