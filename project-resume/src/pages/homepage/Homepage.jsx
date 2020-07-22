@@ -5,8 +5,7 @@ import './homepage.css';
 
 /**
  * @summary The homepage renders specified icons into two flexbox rows
- * @todo render these nav buttons dynamically to pull from the content files
- * @property 
+ * @property {array} history: the BrowserRouter history
  */
 export default function Homepage(props){
   const { history } = props;

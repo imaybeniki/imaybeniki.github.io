@@ -1,0 +1,5 @@
+{
+    "date": "2020-07-17T18:55:00",
+    "category": "meta",
+    "body": "Atomic design will help to organize both code and process. Small components need to exist in order to put them into larger ones. So, I create a folder called atoms. Within this folder will exist another folder for each individual atom containing any files necessary for that atom to render. This structure will be the same for pages, organisms, and molecules as well. My first atom, an icon representing a section will need an image as well as a jsx file to render it. I created icons using Adobe Illustrator and exported them as SVG and PNG images. Next was creating an abstraction to easily render an image using a variable."
+}

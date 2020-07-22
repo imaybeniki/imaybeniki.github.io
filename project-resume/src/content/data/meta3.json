@@ -1,0 +1,5 @@
+{
+    "date": "2020-07-17T18:45:00",
+    "category": "meta",
+    "body": "For clean code and UX design, all sections will have identical layouts at a high level. A sort function, and below an infinitely scrollable series of content boxes. Timeline will be the outlier, but we will get to that later. Using the concepts of atomic design, I can use ReactJs components to build out individual pieces of the application so that we can plug and play. In the picture below, the smaller atoms, represented in red, can be arranged in different types of molecules, represented in orange, that make up the section organism, represented in green, on a page in purple."
+}
