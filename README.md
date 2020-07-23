@@ -1,5 +1,5 @@
 # Interactive Resume and Project
-Route to [my resume](https://imaybeniki.github.io/project-resume/) to interact online.
+Route to [my resume](https://imaybeniki.github.io/project-resume/home) to interact online.
 
 # Use as a template for your own Interactive Resume
 
