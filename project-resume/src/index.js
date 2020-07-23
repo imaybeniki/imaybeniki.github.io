@@ -5,21 +5,16 @@ import * as serviceWorker from './serviceWorker';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Homepage from './pages/homepage/Homepage';
 import Timeline from './pages/timeline/Timeline';
-import Me from './pages/me/Me';
 import Footer from './organisms/footer/Footer';
-import { Meta } from './atoms/ImageFiles/Meta/Meta';
+import ContentContainer from './pages/content/ContentContainer';
 
 ReactDOM.render(
     <div>
         <BrowserRouter>
             <Switch>
+                <Route path="/home" component={Homepage} />
                 <Route path="/timeline" component={Timeline} />
-                <Route path="/me" component={Me} />
-                <Route path="/projects" component={Homepage} />
-                <Route path="/education" component={Homepage} />
-                <Route path="/learn" component={Homepage} />
-                <Route path="/meta" component={Meta} />
-                <Route path="*" component={Homepage} />
+                <Route path="*" component={ContentContainer} />
             </Switch>
         </BrowserRouter>
         <Footer />

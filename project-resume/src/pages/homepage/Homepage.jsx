@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavButton } from '../../atoms/NavButton/NavButton';
 import Header from '../../organisms/header/Header'
 import './homepage.css';
@@ -45,4 +46,8 @@ export default function Homepage(props){
       </div>
     </div>
   );
+}
+
+Homepage.propTypes = {
+  history: PropTypes.array.isRequired,
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from 'prop-types';
 import './content.css';
 
 /**
@@ -15,4 +16,14 @@ export default function JournalContent(props){
         <p>{body}</p>
     </div>
   );
+}
+
+JournalContent.propTypes = {
+    body: PropTypes.string,
+    title: PropTypes.string,
+}
+  
+JournalContent.defaultProps = {
+    body: '',
+    title: '',
 }

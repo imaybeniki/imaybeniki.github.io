@@ -1,13 +1,8 @@
-const fs = require('fs');
-const path = require('path');
-
-const dir = './data';
+import meta1 from './data/meta1.json';
 
 /**
  * @summary a function to concat all JSON files in the data folder into one array
  */
 export function getContentList() {
-  return fs.readdirSync(dir)
-           .filter(name => path.extname(name) === '.json')
-           .map(name => require(path.join(dir, name)));
+  return [meta1]
 }

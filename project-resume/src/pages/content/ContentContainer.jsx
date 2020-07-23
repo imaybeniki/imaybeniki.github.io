@@ -1,7 +1,8 @@
 import React from 'react';
-import ShortContent from '../../molecules/content/ShortContent';
+import ShortContent from '../../molecules/content/VideoContent';
 import JournalContent from '../../molecules/content/JournalContent';
 import Content from '../../molecules/content/Content';
+import * as contentOperations from '../../content/contentOperations';
 
 /**
  * @summary Renders an array of Content boxes from an array of JSON objects
@@ -9,7 +10,7 @@ import Content from '../../molecules/content/Content';
  * @property {string} title: 
  */
 export default function ContentContainer(props){
-  const { contentList } = props;
+  const contentList = contentOperations.getContentList();
 
   return contentList.map((content) => {
         if (content.type === 'short'){
@@ -18,6 +19,6 @@ export default function ContentContainer(props){
         if (content.type === 'journal'){
             return <JournalContent  title={content.title} body={content.body}/>
         }
-        return <Content title={content.title} body={content.body}/>
+        return <Content title={content.title} body={content.body} key={content.date}/>
   });
 }

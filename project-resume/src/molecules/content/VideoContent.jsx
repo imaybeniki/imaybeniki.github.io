@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from 'prop-types';
 import './content.css';
 
 /**
@@ -6,7 +7,7 @@ import './content.css';
  * @property {string} title: the title of the content
  * @property {string} body: the string text representing the content
  */
-export default function ShortContent(props){
+export default function VideoContent(props){
   const { body, title } = props;
 
   return (
@@ -15,4 +16,15 @@ export default function ShortContent(props){
         <p>{body}</p>
     </div>
   );
+}
+
+VideoContent.propTypes = {
+  body: PropTypes.string,
+  title: PropTypes.string,
+  url: PropTypes.string.isRequired,
+}
+
+VideoContent.defaultProps = {
+  body: '',
+  title: '',
 }
