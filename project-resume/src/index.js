@@ -10,7 +10,7 @@ import ContentContainer from './pages/content/ContentContainer';
 
 ReactDOM.render(
     <div>
-        <BrowserRouter>
+        <BrowserRouter basename={global.isProd ? "https://imaybeniki.github.io/" : "http://localhost:3000"}>
             <Switch>
                 <Route path="/home" component={Homepage} />
                 <Route path="/timeline" component={Timeline} />

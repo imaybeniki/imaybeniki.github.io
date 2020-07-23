@@ -11,7 +11,7 @@ function Header(props) {
   const [headerText, setHeaderText] = useState(unstickyHeaderText);
   useEffect(() => {
     const header = document.getElementById("myHeader");
-    const sticky = header.offsetTop;
+  const sticky = header.offsetTop;
     const scrollCallBack = window.addEventListener("scroll", () => {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
