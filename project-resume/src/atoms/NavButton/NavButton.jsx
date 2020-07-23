@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Timeline } from '../ImageFiles/Timeline/Timeline';
 import { Education } from '../ImageFiles/Education/Education';
 import { Learn } from '../ImageFiles/Learn/Learn';
@@ -23,9 +24,14 @@ export function NavButton(props) {
     return (
         <div
             onClick={() => history.push(icon)}
-            onButtonPress={() => history.push(icon)}
+            onKeyPress          ={() => history.push(icon)}
         >
             <Icon icon={`${icon}`} />
         </div>          
     )
+}
+
+NavButton.propTypes = {
+    history: PropTypes.array.isRequired,
+    icon: PropTypes.string
 }

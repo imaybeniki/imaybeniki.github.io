@@ -1,0 +1,6 @@
+{
+    "date": "2020-07-17T18:55:00",
+    "category": "meta",
+    "type": "article",
+    "body": "Knowing I want to use React, I decided to begin with create-react-app and host it on GitHub Pages as those have an almost effortless setup. It is important to start in small manageable chunks. I can always come back around and decouple the app to host it myself when I want to incorporate the back-end side of the resume. I would encourage following a short tutorial to get to this point if you do not have experience with node’s create-react-app or hosting on GitHub Pages."
+}

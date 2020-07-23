@@ -2,14 +2,14 @@
     max-height: 100vh;
     overflow: auto;
     text-align: center;
+    vertical-align: center;
 }
 
 .homepage-outer-flexbox { 
     display: flex;
     flex-direction: column;
     vertical-align: middle;
-    top: 50%;
-    bottom: 50%;
+    align-items: center;
 }
 
 .homepage-row-one {

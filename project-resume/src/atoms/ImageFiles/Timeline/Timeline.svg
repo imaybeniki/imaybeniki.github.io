@@ -1,1 +1,22 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.58 61.65"><defs><style>.cls-1{fill:#4281a4;}.cls-2,.cls-3{fill:none;stroke:#e4dfda;stroke-miterlimit:10;}.cls-2{stroke-width:6px;}.cls-3{stroke-width:10px;}.cls-4{fill:#e4dfda;}</style></defs><title>Timeline</title><ellipse class="cls-1" cx="30.51" cy="30.65" rx="30.79" ry="30.83" transform="translate(0.09 0.36) rotate(-0.35)"/><line class="cls-2" x1="50.25" y1="29.3" x2="11.42" y2="29.54"/><line class="cls-3" x1="41.5" y1="29.5" x2="41.55" y2="37.81"/><line class="cls-3" x1="20.64" y1="29.55" x2="20.69" y2="37.86"/><line class="cls-3" x1="30.78" y1="21.57" x2="30.83" y2="29.87"/><ellipse class="cls-4" cx="30.44" cy="18.89" rx="4.45" ry="4.48" transform="translate(0.16 0.36) rotate(-0.35)"/><polygon class="cls-4" points="56.06 29.41 50.21 23.5 50.29 35.39 56.06 29.41"/><polygon class="cls-4" points="5.95 30.02 11.79 35.94 11.72 24.05 5.95 30.02"/><ellipse class="cls-4" cx="41.28" cy="39.68" rx="4.45" ry="4.48" transform="translate(0.04 0.43) rotate(-0.35)"/><ellipse class="cls-4" cx="20.42" cy="39.96" rx="4.45" ry="4.48" transform="translate(0.03 0.3) rotate(-0.35)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61.3 61.3" style="enable-background:new 0 0 61.3 61.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4281A4;}
+	.st1{fill:none;stroke:#E4DFDA;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#E4DFDA;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:#E4DFDA;}
+</style>
+<title>Timeline</title>
+<ellipse transform="matrix(1 -6.186884e-03 6.186884e-03 1 -0.1891 0.1894)" class="st0" cx="30.5" cy="30.7" rx="38.5" ry="38.5"/>
+<line class="st1" x1="54.8" y1="28.7" x2="6.3" y2="29"/>
+<line class="st2" x1="43.9" y1="29" x2="44" y2="39.4"/>
+<line class="st2" x1="17.8" y1="29.1" x2="17.9" y2="39.4"/>
+<line class="st2" x1="30.5" y1="19.1" x2="30.6" y2="29.5"/>
+<ellipse transform="matrix(1 -6.174122e-03 6.174122e-03 1 -9.786075e-02 0.1881)" class="st3" cx="30.4" cy="15.9" rx="5.6" ry="5.6"/>
+<polygon class="st3" points="62.1,28.9 54.8,21.5 54.9,36.4 "/>
+<polygon class="st3" points="-0.5,29.7 6.8,37 6.7,22.2 "/>
+<ellipse transform="matrix(1 -6.183693e-03 6.183693e-03 1 -0.2585 0.2728)" class="st3" cx="44" cy="41.9" rx="5.6" ry="5.6"/>
+<ellipse transform="matrix(1 -6.183693e-03 6.183693e-03 1 -0.2611 0.1115)" class="st3" cx="17.9" cy="42.3" rx="5.6" ry="5.6"/>
+</svg>

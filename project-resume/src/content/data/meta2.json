@@ -1,0 +1,7 @@
+{
+    "date": "2020-07-17T18:35:00",
+    "category": "meta",
+    "type": "article",
+    "title": "Organization and Design",
+    "body": "As I develop my interactive resume, I thought it would help Alright, big picture planning. The intent of this project is to showcase my ability to create and host a web application, as well as helping at least one other person to do so. The sections that I had decided on were standard resume sections, and a couple for fun. The sections Education, Projects, Me, and Timeline provide respective information like any resume. The section Meta is a series of articles explaining the process behind creating this project (articles like this one). And finally Learn: short articles about technical concepts for a non-technical audience."
+}

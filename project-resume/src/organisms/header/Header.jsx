@@ -1,7 +1,11 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import "./header.css";
 
+/**
+ * @summary Renders the header of the page, works for sticky or static headers
+ */
 function Header(props) {
   const {stickyHeaderText, unstickyHeaderText} = props;
   const [headerText, setHeaderText] = useState(unstickyHeaderText);
@@ -33,6 +37,16 @@ function Header(props) {
       </header>
     </div>
   );
+}
+
+Header.propTypes = {
+  stickyHeaderText: PropTypes.string,
+  unstickyHeaderText: PropTypes.string,
+}
+
+Header.defaultProps = {
+  stickyHeaderText: '',
+  unstickyHeaderText: '',
 }
 
 export default Header;
