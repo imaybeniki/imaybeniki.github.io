@@ -27,7 +27,7 @@ In the `content/data` folder, there are a series of JSON files that entail the m
 
 Type | journal | video | content 
 --- | --- | --- | --- 
-Attributes | date*, title, body | date*, url* title, body | date*, title, body
+**Attributes** | date*, title, body | date*, url* title, body | date*, title, body
 
 ## Update Code
 
