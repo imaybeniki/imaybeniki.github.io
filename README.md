@@ -15,11 +15,11 @@ Follow these steps to get rolling locally (dependent on [Node](https://nodejs.or
 
 ## Update Header and Footer
 
-In `molecules/footer` replace the URLs in `FooterContent.jsx`. This will link potential employers to your LinkedIn or GitHub in a new tab, or trigger and email to be sent to your address. The HTML should be simple to update with any other links, or information a footer may have. The header renders dynamically based on the URL, however in `Homepage.jsx` you may want to update the hard coded name being passed into the Header as a prop. 
+In `molecules/footer` replace the URLs in `FooterContent.jsx`. This will link potential employers to your LinkedIn or GitHub in a new tab, or trigger and email to be sent to your address. The HTML should be simple to update with any other links, or information a footer may have. The header renders dynamically based on the URL. Fo the homepage, the header is pulled from `headerName` in `homepageDetails` within `pages/homepage/homepageDetails.json`. 
 
 ## Update Icons
 
-In the `atoms` folder, there are folders for each icon type. To adjust icons, either replace the PNG file, or create a brand new icon. If you create a new icon, add the necessary references to `NavButton.jsx` at `atoms/NavButton` If you prefer to use an SVG file, simply copy the code of the SVG and paste it within the `return` on the render in a specific icon's component file (ex: `Education.jsx` in `src/atoms/ImageFiles/Education`).  
+In the `atoms` folder, there are folders for each icon type. To adjust icons, either replace the PNG file, or create a brand new icon. If you create a new icon, add the necessary references to `NavButton.jsx` at `atoms/NavButton` If you prefer to use an SVG file, simply copy the code of the SVG and paste it within the `return` on the render in a specific icon's component file (ex: `Education.jsx` in `src/atoms/ImageFiles/Education`). To render specific icons on the homepage, update the icons attribute of `homepageDetails` within `pages/homepage/homepageDetails.json`.
 
 ## Update Content
 
