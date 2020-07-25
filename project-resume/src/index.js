@@ -12,9 +12,9 @@ ReactDOM.render(
     <div>
         <BrowserRouter basename={global.isProd ? "https://imaybeniki.github.io/" : "http://localhost:3000"}>
             <Switch>
-                <Route path="/home" component={Homepage} />
+                <Route path="/content/{type}" component={ContentContainer} />
                 <Route path="/timeline" component={Timeline} />
-                <Route path="*" component={ContentContainer} />
+                <Route path="*" component={Homepage} />
             </Switch>
         </BrowserRouter>
         <Footer />

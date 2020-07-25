@@ -23,8 +23,8 @@ export function NavButton(props) {
     const Icon = svgOptions[icon];
     return (
         <div
-            onClick={() => history.push(icon)}
-            onKeyPress          ={() => history.push(icon)}
+            onClick={() => history.replace(`/${icon}`)}
+            onKeyPress={() => history.replace(`/${icon}`)}
         >
             <Icon icon={`${icon}`} />
         </div>          
