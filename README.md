@@ -31,7 +31,7 @@ content | **date**, title, body
 video | **date**, **url**, title, body
 journal | **date**, title, body
 experience | **date**, employer, position, start, end, description
-icon | **date**, iconName*, title, body
+icon | **date**, **iconName**, title, body
 
 ## Update Code
 
