@@ -25,9 +25,13 @@ In the `atoms` folder, there are folders for each icon type. To adjust icons, ei
 
 In the `content/data` folder, there are a series of JSON files that entail the metadata for the content, as well as the content itself. The `type` attribute of the object indicates the type of content box to render. Refer to the table below for possible types, and the attributes that can be added for them. * marks a required attribute. The content is filtered by `category`. The navigation icons will update the URL, which will be used to filter by category.
 
-Type | journal | video | content 
---- | --- | --- | --- 
-**Attributes** | date*, title, body | date*, url* title, body | date*, title, body
+Type | Attributes
+--- | --------
+content | date*, title, body
+video | date*, url* title, body
+journal | date*, title, body
+experience | date*, employer, position, start, end, description
+icon | date*, iconName*, title, body
 
 ## Update Code
 
