@@ -1,0 +1,12 @@
+{
+    "headerName": "Nicole May",
+    "columns": 2,
+    "icons" : [
+        "timeline",
+        "me",
+        "learn",
+        "meta",
+        "projects",
+        "education"
+    ]
+}
