@@ -35,4 +35,4 @@ icon | **date**, **iconName**, title, body
 
 ## Update Code
 
-There is no better way to learn how to code than doing it. Try using the concepts to build your own content boxes and render them based on the `type` in your JSON file by simply following the structures existing and updating the HTML however you want. Check out the learn tab (looks like a brain) for fun tips and tricks.
+There is no better way to learn how to code than doing it. Try using the concepts to build your own content boxes and render them based on the `type` in your JSON file by simply following the structures existing and updating the HTML however you want. Check out the [Learn Page](https://imaybeniki.github.io/project-resume/learn) to for fun tips and tricks.
