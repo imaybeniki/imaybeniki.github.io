@@ -16,7 +16,7 @@ ReactDOM.render(
         <Router history={ history }  >
             <Route path="/content/{type}" component={ContentContainer} />
             <Route path="/timeline" component={Timeline} />
-            <Route path="*" component={Homepage} />
+            <Route path="/home" component={Homepage} />
         </Router>
         <Footer />
     </div>, 

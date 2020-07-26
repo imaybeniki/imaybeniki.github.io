@@ -10,8 +10,15 @@ import * as contentOperations from '../../content/contentOperations';
  * @property {string} title: 
  */
 export default function ContentContainer(props){
-  const contentList = contentOperations.getContentList();
+  // Get the history. This will contain the URL which includes category
+  const { history } = props;
 
+  // Get the list of content from content folder
+  const contentList = contentOperations.getContentList();
+  // Filter the list by category
+  contentList = contentList.filter(x => x.category == history)
+
+  // Render content boxes based on their types
   return contentList.map((content) => {
         if (content.type === 'short'){
             return <ShortContent title={content.title} body={content.body}/>
