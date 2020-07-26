@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import createStore from 'redux';
+import { createStore } from 'redux';
+import { reducer } from './redux/reducer';
 import { createBrowserHistory } from 'history';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -11,18 +12,15 @@ import Timeline from './pages/timeline/Timeline';
 import Footer from './organisms/footer/Footer';
 import ContentContainer from './pages/content/ContentContainer';
 
-const store = createStore();
 const history = createBrowserHistory();
 
 ReactDOM.render(
     <div>
-        <Provider store={ store }>
-            <Router history={ history }  >
-                <Route path="/content/{type}" component={ContentContainer} />
-                <Route path="/timeline" component={Timeline} />
-                <Route path="*" component={Homepage} />
-            </Router>
-        </Provider>
+        <Router history={ history }  >
+            <Route path="/content/{type}" component={ContentContainer} />
+            <Route path="/timeline" component={Timeline} />
+            <Route path="*" component={Homepage} />
+        </Router>
         <Footer />
     </div>, 
     document.getElementById('root'));
