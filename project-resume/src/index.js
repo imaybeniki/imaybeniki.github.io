@@ -14,8 +14,7 @@ const history = createBrowserHistory();
 ReactDOM.render(
     <div>
         <Router history={ history }  >
-            <Route path="/content/{type}" component={ContentContainer} />
-            <Route path="/timeline" component={Timeline} />
+            <Route path="/:type" component={ContentContainer} />
             <Route path="/home" component={Homepage} />
         </Router>
         <Footer />

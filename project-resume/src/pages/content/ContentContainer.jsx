@@ -11,12 +11,13 @@ import * as contentOperations from '../../content/contentOperations';
  */
 export default function ContentContainer(props){
   // Get the history. This will contain the URL which includes category
-  const { history } = props;
+  // TODO: get this working with match.params.type and remove string editing
+  const type = props.location.pathname
 
   // Get the list of content from content folder
   const contentList = contentOperations.getContentList();
   // Filter the list by category
-  contentList = contentList.filter(x => x.category == history)
+  var contentToRender = contentList.filter(x => x.type === params.type);
 
   // Render content boxes based on their types
   return contentList.map((content) => {
