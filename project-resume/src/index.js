@@ -5,7 +5,6 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { Router, Route } from 'react-router-dom';
 import Homepage from './pages/homepage/Homepage';
-import Timeline from './pages/timeline/Timeline';
 import Footer from './organisms/footer/Footer';
 import ContentContainer from './pages/content/ContentContainer';
 
@@ -15,7 +14,7 @@ ReactDOM.render(
     <div>
         <Router history={ history }  >
             <Route path="/:type" component={ContentContainer} />
-            <Route path="/home" component={Homepage} />
+            <Route exact path="/" component={Homepage} />
         </Router>
         <Footer />
     </div>, 

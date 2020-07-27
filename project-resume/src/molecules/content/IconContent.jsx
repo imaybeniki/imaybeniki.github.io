@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import Title from "../../atoms/Title/Title";
 import './content.css';
 
 /**
@@ -11,9 +12,11 @@ export default function IconContent(props){
   const { body, title } = props;
 
   return (
-    <div className="content-box">
-        <h2>{title}</h2>
-        <p>{body}</p>
+    <div className="outer-content-box">
+        <Title title={title} />
+        <div className="content-box">
+            <p>{body}</p>
+        </div>
     </div>
   );
 }

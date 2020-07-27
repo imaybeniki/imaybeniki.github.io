@@ -13,7 +13,7 @@ export default function Homepage(props){
 
   return (
     <div className="full-page">
-      <Header stickyHeaderText="Home" unstickyHeaderText="Nicole May"/>
+      <Header unstickyHeaderText="Nicole May"/>
       <div className="homepage-outer-flexbox">
         <div className="homepage-row-one">
           <NavButton 

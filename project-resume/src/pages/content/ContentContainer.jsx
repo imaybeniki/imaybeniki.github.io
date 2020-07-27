@@ -1,32 +1,24 @@
 import React from 'react';
-import ShortContent from '../../molecules/content/VideoContent';
-import JournalContent from '../../molecules/content/JournalContent';
-import Content from '../../molecules/content/Content';
-import * as contentOperations from '../../content/contentOperations';
+import PropTypes from 'prop-types';
+import ContentFilter from '../../organisms/content/ContentFilter';
+import Header from '../../organisms/header/Header';
+import * as formatter from '../../content/contentFormatters';
+import './contentContainer.css';
 
 /**
  * @summary Renders an array of Content boxes from an array of JSON objects
- * @property {array} contentList: a groomed array of content to be rendered
- * @property {string} title: 
+ * @property {array} location: location coming from react router
  */
 export default function ContentContainer(props){
-  // Get the history. This will contain the URL which includes category
-  // TODO: get this working with match.params.type and remove string editing
-  const type = props.location.pathname
-
-  // Get the list of content from content folder
-  const contentList = contentOperations.getContentList();
-  // Filter the list by category
-  var contentToRender = contentList.filter(x => x.type === params.type);
-
-  // Render content boxes based on their types
-  return contentList.map((content) => {
-        if (content.type === 'short'){
-            return <ShortContent title={content.title} body={content.body}/>
-        } 
-        if (content.type === 'journal'){
-            return <JournalContent  title={content.title} body={content.body}/>
-        }
-        return <Content title={content.title} body={content.body} key={content.date}/>
-  });
+    const headerText = formatter.formatHeaderText(props.location.pathname);
+    return (
+        <div className="content-container">
+            <Header unstickyHeaderText={headerText} stickyHeaderText={headerText}/>
+            <ContentFilter {...props} />
+        </div>
+    );
 }
+
+ContentContainer.propTypes = {
+    location: PropTypes.object.isRequired,
+  }
