@@ -5,38 +5,8 @@
     vertical-align: center;
 }
 
-.homepage-outer-flexbox { 
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
-    align-items: center;
-}
-
-.homepage-row-one {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    margin: auto;
-}
-
-.homepage-row-two {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    margin: auto;
-}
-
 .container {
     text-align: center;
     vertical-align: middle;
     margin-bottom: 20%;
-}
-
-.container > img {
-    max-width: 75%;
-    max-height: 75%;
-}
-
-.container > img:hover { 
-    transform: scale(1.1);
 }

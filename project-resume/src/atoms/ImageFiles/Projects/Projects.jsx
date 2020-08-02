@@ -1,18 +1,16 @@
 import React from 'react';
 import projects from'./projects.png';
+import '../image.css';
 
 /**
- * @param {string} className the name of the class to style the png image 
+ * @summary renders the Projects icon
  */
 export function Projects(props) {
-
-    const { className } = props;
-
     return (
-        <nav className={className}>
-        <div className="container">
-            <img  src={projects} alt="projects"/>
-        </div>
+        <nav>
+            <div className="container">
+                <img  src={projects} alt="projects"/>
+            </div>
         </nav>
     );
 }

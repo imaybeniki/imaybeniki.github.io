@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavButton } from '../../atoms/NavButton/NavButton';
 import Header from '../../organisms/header/Header'
+import Icons from '../../molecules/icons/Icons';
+import homepage from './homepageDetails.json';
 import './homepage.css';
 
 /**
@@ -14,36 +15,7 @@ export default function Homepage(props){
   return (
     <div className="full-page">
       <Header unstickyHeaderText="Nicole May"/>
-      <div className="homepage-outer-flexbox">
-        <div className="homepage-row-one">
-          <NavButton 
-            icon="timeline"
-            history={history}
-          />
-          <NavButton 
-            icon="me" 
-            history={history}
-          />
-          <NavButton 
-            icon="learn" 
-            history={history}
-          />
-        </div>
-        <div className="homepage-row-two">
-          <NavButton 
-            icon="meta" 
-            history={history}
-          />
-          <NavButton 
-            icon="projects" 
-            history={history}
-          />
-          <NavButton 
-            icon="education" 
-            history={history}
-          />
-        </div>
-      </div>
+      <Icons icons={homepage.icons}/>
     </div>
   );
 }

@@ -1,18 +1,16 @@
 import React from 'react';
 import learn from'./learn.png';
+import '../image.css';
 
 /**
- * @param {string} className the name of the class to style the png image 
+ * @summary renders the Learn image 
  */
 export function Learn(props) {
-
-    const { className } = props;
-
     return (
-        <nav className={className}>
-        <div className="container">
-            <img  src={learn} alt="learn"/>
-        </div>
+        <nav>
+            <div className="container">
+                <img  src={learn} alt="learn"/>
+            </div>
         </nav>
     );
 }

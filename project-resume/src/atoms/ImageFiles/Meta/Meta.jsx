@@ -1,15 +1,14 @@
 import React from 'react';
 import meta from'./meta.png';
+import '../image.css';
 
 /**
- * @param {string} className the name of the class to style the png image 
+ * @summary renders the Meta icon
  */
 export function Meta(props) {
 
-    const { className } = props;
-
     return (
-        <nav className={className}>
+        <nav>
         <div className="container">
             <img  src={meta} alt="meta"/>
         </div>

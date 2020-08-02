@@ -1,18 +1,16 @@
 import React from 'react';
 import me from'./me.png';
+import '../image.css';
 
 /**
- * @param {string} className the name of the class to style the png image 
+ * @summary renders the Me icon
  */
 export function Me(props) {
-
-    const { className } = props;
-
     return (
-        <nav className={className}>
-        <div className="container">
-            <img  src={me} alt="me"/>
-        </div>
+        <nav>
+            <div className="container">
+                <img  src={me} alt="me"/>
+            </div>
         </nav>
     );
 }
