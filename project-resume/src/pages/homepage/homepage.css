@@ -5,8 +5,9 @@
     vertical-align: center;
 }
 
-.container {
-    text-align: center;
-    vertical-align: middle;
-    margin-bottom: 20%;
+.icon-container{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: auto;
 }

@@ -8,17 +8,20 @@ import './contentContainer.css';
 /**
  * @summary Renders an array of Content boxes from an array of JSON objects
  * @property {array} location: location coming from react router
+ * @property {array} history: hisotry coming from react router
  */
 export default function ContentContainer(props){
-    const headerText = formatter.formatHeaderText(props.location.pathname);
+    const { history, location } = props;
+    const headerText = formatter.formatHeaderText(location.pathname);
     return (
         <div className="content-container">
-            <Header unstickyHeaderText={headerText} stickyHeaderText={headerText}/>
+            <Header history={history} unstickyHeaderText={headerText} stickyHeaderText={headerText}/>
             <ContentFilter {...props} />
         </div>
     );
 }
 
 ContentContainer.propTypes = {
+    history: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
   }

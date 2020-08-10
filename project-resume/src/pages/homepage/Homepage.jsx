@@ -14,8 +14,10 @@ export default function Homepage({ history, location }){
 
   return (
     <div className="full-page">
-      <Header unstickyHeaderText="Interactive Resume" stickyHeaderText="Nicole May"/>
-      <Icons icons={homepage.icons} history={history} location={location}/>
+      <Header history={history} unstickyHeaderText="Nicole May" stickyHeaderText="Interactive Resume"/>
+      <div className="icon-container">
+        <Icons icons={homepage.icons} history={history} location={location}/>
+      </div>
     </div>
   );
 }

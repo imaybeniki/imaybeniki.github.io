@@ -6,21 +6,28 @@ import { Learn } from '../ImageFiles/Learn/Learn';
 import { Me } from '../ImageFiles/Me/Me';
 import { Meta } from '../ImageFiles/Meta/Meta';
 import { Projects } from '../ImageFiles/Projects/Projects';
+import { Home } from '../ImageFiles/Home/Home';
 
+/**
+ * @summary renders a single icon
+ * @prop {object} history from react router
+ * @prop {string} icon the name of the icon to render
+ */
 export function NavButton(props) {
 
     const { history, icon } = props;
 
-    const svgOptions = {
+    const pngOptions = {
         timeline: Timeline,
         education: Education,
         learn: Learn,
         me: Me,
         meta: Meta,
         projects: Projects,
+        home: Home,
     }
 
-    const Icon = svgOptions[icon];
+    const Icon = pngOptions[icon];
     return (
         <div
             onClick={() => history.replace(`/${icon}`)}

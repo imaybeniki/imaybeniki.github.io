@@ -6,3 +6,15 @@
 .container > img:hover { 
     transform: scale(1.1);
 }
+
+.home-container > img {
+    max-width: 60px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.home-container > img:hover { 
+    transform: scale(1.1);
+}

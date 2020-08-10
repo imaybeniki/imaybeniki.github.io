@@ -2,12 +2,16 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import "./header.css";
+import Icons from "../../molecules/icons/Icons";
 
 /**
  * @summary Renders the header of the page, works for sticky or static headers
+ * @prop {object} history: the history from react router
+ * @prop {string} stickyHeaderText: the header you see when scrolling
+ * @prop {string} unstickyHeaderText: the header you see when at the top of the page
  */
 function Header(props) {
-  const {stickyHeaderText, unstickyHeaderText} = props;
+  const {history, stickyHeaderText, unstickyHeaderText} = props;
   const [headerText, setHeaderText] = useState(unstickyHeaderText);
   useEffect(() => {
     const header = document.getElementById("myHeader");
@@ -33,6 +37,7 @@ function Header(props) {
   return (
     <div>
       <header id="myHeader" className="header">
+        <Icons history={history} icons={["home"]} />
         <h2><span>{headerText}</span></h2>
       </header>
     </div>
@@ -40,6 +45,7 @@ function Header(props) {
 }
 
 Header.propTypes = {
+  history: PropTypes.object.isRequired,
   stickyHeaderText: PropTypes.string,
   unstickyHeaderText: PropTypes.string,
 }
