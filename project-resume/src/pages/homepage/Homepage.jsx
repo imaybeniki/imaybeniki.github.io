@@ -7,19 +7,20 @@ import './homepage.css';
 
 /**
  * @summary The homepage renders specified icons into two flexbox rows
- * @property {array} history: the BrowserRouter history
+ * @property {array} history: the React Router history
+ * @property {object} match: the object with URL information from React Router
  */
-export default function Homepage(props){
-  const { history } = props;
+export default function Homepage({ history, location }){
 
   return (
     <div className="full-page">
-      <Header unstickyHeaderText="Nicole May"/>
-      <Icons icons={homepage.icons}/>
+      <Header unstickyHeaderText="Interactive Resume" stickyHeaderText="Nicole May"/>
+      <Icons icons={homepage.icons} history={history} location={location}/>
     </div>
   );
 }
 
 Homepage.propTypes = {
-  history: PropTypes.array.isRequired,
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }

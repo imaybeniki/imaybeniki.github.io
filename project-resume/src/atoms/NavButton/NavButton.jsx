@@ -32,6 +32,6 @@ export function NavButton(props) {
 }
 
 NavButton.propTypes = {
-    history: PropTypes.array.isRequired,
+    history: PropTypes.object.isRequired,
     icon: PropTypes.string
 }

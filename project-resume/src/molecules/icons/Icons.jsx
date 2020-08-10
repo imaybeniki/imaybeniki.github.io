@@ -8,8 +8,7 @@ import './icons.css';
  * @prop {array} icons: the list of strings representing icons to render
  * @prop {array} history: the history object for routing
  */
-export default function Icons(props){
-  const { history, icons } = props;
+export default function Icons({ history, icons }){
 
   return icons.map(icon => (
     <NavButton
@@ -22,5 +21,5 @@ export default function Icons(props){
 
 Icons.propTypes = {
   icons: PropTypes.array.isRequired,
-  history: PropTypes.array.isRequired,
+  history: PropTypes.object.isRequired,
 }
