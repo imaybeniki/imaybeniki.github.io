@@ -12,7 +12,7 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
     <div>
-        <Router history={ history }  >
+        <Router basename="/" history={ history }  >
             <Switch>
                 <Route exact path="/home" component={Homepage} />
                 <Route exact path="/:type" component={ContentContainer}/>
