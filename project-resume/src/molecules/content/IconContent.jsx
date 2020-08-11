@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import Title from "../../atoms/Title/Title";
 import './content.css';
+import Icons from "../icons/Icons";
 
 /**
  * @summary The homepage renders specified icons into two flexbox rows
@@ -15,6 +16,7 @@ export default function IconContent(props){
     <div className="outer-content-box">
         <Title title={title} />
         <div className="content-box">
+            <Icons icons={["aspen"]}/>
             <p>{body}</p>
         </div>
     </div>

@@ -16,7 +16,9 @@ export default function ContentContainer(props){
     return (
         <div className="content-container">
             <Header history={history} unstickyHeaderText={headerText} stickyHeaderText={headerText}/>
-            <ContentFilter {...props} />
+            <div className="all-content">
+                <ContentFilter {...props} />
+            </div>
         </div>
     );
 }

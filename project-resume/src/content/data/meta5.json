@@ -2,5 +2,5 @@
     "date": "2020-07-17T19:55:00",
     "category": "meta",
     "type": "article",
-    "body": "Atomic design will help to organize both code and process. Small components need to exist in order to put them into larger ones. So, I create a folder called atoms. Within this folder will exist another folder for each individual atom containing any files necessary for that atom to render. This structure will be the same for pages, organisms, and molecules as well. My first atom, an icon representing a section will need an image as well as a jsx file to render it. I created icons using Adobe Illustrator and exported them as SVG and PNG images. Next was creating an abstraction to easily render an image using a variable."
+    "body": "Atomic design will help to organize both code and process. Node provided me with a basic web app up and running. To begin, within atoms, is a folder to make up everything needed to render my first atom. My goal was having everything necessary to render a small piece all together. The styling, code, and tests that make up one atom will be kept together so that they can be placed and used easily in many locations."
 }
