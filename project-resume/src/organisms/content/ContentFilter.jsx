@@ -7,17 +7,16 @@ import * as contentOperations from '../../content/contentOperations';
 
 /**
  * @summary Renders an array of Content boxes from an array of JSON objects
- * @property {string} history: React Router history object
+ * @property {string} match: React Router object
  */
 export default function ContentFilter(props){
-  // Get the history. This will contain the URL which includes category
-  const category = props.location.pathname
-  const { history } = props;
+  // Get the type from the URL
+  const { match: { params: { type } } } = props;
 
   // Get the list of content from content folder
   const contentList = contentOperations.getContentList();
   // Filter the list by category
-  var contentToRender = contentList.filter(x => category.includes(x.category));
+  var contentToRender = contentList.filter(x => type == x.category);
 
   // Render content boxes based on their types
   return contentToRender.map((content) => {
@@ -35,15 +34,15 @@ export default function ContentFilter(props){
                       key={content.date}
                     />
         }
-        if (content.type === 'icon'){
-          return <IconContent 
-                    title={content.title} 
-                    body={content.body} 
-                    iconName={content.iconName || 'me'}
-                    history={history}
-                    key={content.date}
-                  />
-        }
+        // if (content.type === 'icon'){
+        //   return <IconContent 
+        //             title={content.title} 
+        //             body={content.body} 
+        //             iconName={content.iconName || 'me'}
+        //             history={history}
+        //             key={content.date}
+        //           />
+        // }
         return <Content 
                   title={content.title} 
                   body={content.body} 
