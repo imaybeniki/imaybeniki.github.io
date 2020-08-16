@@ -13,15 +13,15 @@ Follow these steps to get rolling locally (dependent on [Node](https://nodejs.or
 2. From the base folder, run `npm i` to install the node_modules folder for all node dependencies in the project
 3. When node completes install, run `npm start` to see the project 
 
-## Update Header and Footer
+### Update Header and Footer
 
 In `molecules/footer` replace the URLs in `FooterContent.jsx`. This will link potential employers to your LinkedIn or GitHub in a new tab, or trigger and email to be sent to your address. The HTML should be simple to update with any other links, or information a footer may have. The header renders dynamically based on the URL. Fo the homepage, the header is pulled from `headerName` in `homepageDetails` within `pages/homepage/homepageDetails.json`. 
 
-## Update Icons
+### Update Icons
 
 In the `atoms` folder, there are folders for each icon type. To adjust icons, either replace the PNG file, or create a brand new icon. If you create a new icon, add the necessary references to `NavButton.jsx` at `atoms/NavButton` If you prefer to use an SVG file, simply copy the code of the SVG and paste it within the `return` on the render in a specific icon's component file (ex: `Education.jsx` in `src/atoms/ImageFiles/Education`). To render specific icons on the homepage, update the icons attribute of `homepageDetails` within `pages/homepage/homepageDetails.json`.
 
-## Update Content
+### Update Content
 
 In the `content/data` folder, there are a series of JSON files that entail the metadata for the content, as well as the content itself. The `type` attribute of the object indicates the type of content box to render. Refer to the table below for possible types, and the attributes that can be added for them. Bold marks a required attribute. The content is filtered by `category`. The navigation icons will update the URL, which will be used to filter by category.
 
@@ -33,6 +33,6 @@ journal | **date**, title, body
 experience | **date**, employer, position, start, end, description
 icon | **date**, **iconName**, title, body
 
-## Update Code
+### Update Code
 
 There is no better way to learn how to code than doing it. Try using the concepts to build your own content boxes and render them based on the `type` in your JSON file by simply following the structures existing and updating the HTML however you want. Check out the [Learn Page](https://imaybeniki.github.io/project-resume/learn) to for fun tips and tricks.
