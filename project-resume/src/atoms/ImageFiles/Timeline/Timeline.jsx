@@ -10,6 +10,7 @@ export function Timeline(props) {
         <nav>
             <div className="container">
                 <img  src={timeline} alt="timeline"/>
+                <h3>Timeline</h3>
             </div>
         </nav>
     );

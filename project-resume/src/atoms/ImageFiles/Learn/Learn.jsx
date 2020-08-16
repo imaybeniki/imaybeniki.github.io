@@ -10,6 +10,7 @@ export function Learn(props) {
         <nav>
             <div className="container">
                 <img  src={learn} alt="learn"/>
+                <h3>Learn</h3>
             </div>
         </nav>
     );

@@ -5,7 +5,7 @@ import '../image.css';
 /**
  * @summary renders the Learn image 
  */
-export function Home(props) {
+export function Home() {
     return (
         <nav>
             <div className="home-container">

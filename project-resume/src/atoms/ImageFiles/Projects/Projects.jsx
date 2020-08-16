@@ -10,6 +10,7 @@ export function Projects(props) {
         <nav>
             <div className="container">
                 <img  src={projects} alt="projects"/>
+                <h3>Projects</h3>
             </div>
         </nav>
     );

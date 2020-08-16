@@ -11,6 +11,7 @@ export function Meta(props) {
         <nav>
         <div className="container">
             <img  src={meta} alt="meta"/>
+            <h3>Meta</h3>
         </div>
         </nav>
     );

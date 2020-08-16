@@ -10,6 +10,7 @@ export function Me(props) {
         <nav>
             <div className="container">
                 <img  src={me} alt="me"/>
+                <h3>About Me</h3>
             </div>
         </nav>
     );

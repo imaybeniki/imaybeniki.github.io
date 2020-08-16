@@ -13,9 +13,7 @@ import { Home } from '../ImageFiles/Home/Home';
  * @prop {object} history from react router
  * @prop {string} icon the name of the icon to render
  */
-export function NavButton(props) {
-
-    const { history, icon } = props;
+export function NavButton({ history, icon }) {
 
     const pngOptions = {
         timeline: Timeline,
