@@ -15,7 +15,7 @@ export default function JournalContent(props){
   return (
     <div className="outer-content-box">
       <Title title={title} />
-      <Paragraph />
+      <Paragraph body={body}/>
     </div>
   );
 }

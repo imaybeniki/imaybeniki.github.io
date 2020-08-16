@@ -7,6 +7,7 @@ import { Me } from '../ImageFiles/Me/Me';
 import { Meta } from '../ImageFiles/Meta/Meta';
 import { Projects } from '../ImageFiles/Projects/Projects';
 import { Home } from '../ImageFiles/Home/Home';
+import { Aspen } from '../ImageFiles/Aspen/Aspen';
 
 /**
  * @summary renders a single icon
@@ -16,6 +17,7 @@ import { Home } from '../ImageFiles/Home/Home';
 export function NavButton({ history, icon }) {
 
     const pngOptions = {
+        aspen: Aspen,
         timeline: Timeline,
         education: Education,
         learn: Learn,
@@ -25,15 +27,17 @@ export function NavButton({ history, icon }) {
         home: Home,
     }
 
+    if (!pngOptions[icon]) return <React.Empty />;
+
     const Icon = pngOptions[icon];
     return (
         <div
-            onClick={() => history.replace(`/${icon}`)}
-            onKeyPress={() => history.replace(`/${icon}`)}
+            onClick={() => history.replace(`/project-resume/${icon}`)}
+            onKeyPress={() => history.replace(`/project-resume/${icon}`)}
         >
             <Icon icon={`${icon}`} />
         </div>          
-    )
+    );
 }
 
 NavButton.propTypes = {

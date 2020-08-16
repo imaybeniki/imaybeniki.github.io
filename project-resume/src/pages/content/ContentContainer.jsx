@@ -7,12 +7,12 @@ import './contentContainer.css';
 
 /**
  * @summary Renders an array of Content boxes from an array of JSON objects
- * @property {array} location: location coming from react router
+ * @property {array} match: location coming from react router
  * @property {array} history: hisotry coming from react router
  */
 export default function ContentContainer(props){
-    const { history, location } = props;
-    const headerText = formatter.formatHeaderText(location.pathname);
+    const { history, match: { params: { type } } } = props;
+    const headerText = formatter.formatHeaderText(type);
     return (
         <div className="content-container">
             <Header history={history} unstickyHeaderText={headerText} stickyHeaderText={headerText}/>
@@ -25,5 +25,5 @@ export default function ContentContainer(props){
 
 ContentContainer.propTypes = {
     history: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
+    match: PropTypes.object.isRequired,
   }

@@ -12,11 +12,11 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
     <div>
-        <Router basename="/" history={ history }  >
+        <Router basename="/project-resume/" history={ history }  >
             <Switch>
                 <Route exact path="/project-resume" component={Homepage} />
-                <Route exact path="/home" component={Homepage} />
-                <Route exact path="/:type" component={ContentContainer}/>
+                <Route exact path="/project-resume/home" component={Homepage} />
+                <Route exact path="/project-resume/:type" component={ContentContainer}/>
             </Switch>
         </Router>
         <Footer />

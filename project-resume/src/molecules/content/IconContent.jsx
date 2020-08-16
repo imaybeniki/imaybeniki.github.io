@@ -21,20 +21,18 @@ export default function IconContent(
   }
 ){
 
-  return iconName 
-    ? (
+  return (
       <div className="outer-content-box">
           <Title title={title} />
           <div className="icon-content-box">
               <Icons 
-                icons={[iconName || "me"]}
+                icons={[iconName]}
                 history={history}
               />
               <Paragraph body={body} />
           </div>
       </div>
-    ):
-    <React.Empty />
+    )
 }
 
 IconContent.propTypes = {

@@ -11,12 +11,12 @@ import * as contentOperations from '../../content/contentOperations';
  */
 export default function ContentFilter(props){
   // Get the type from the URL
-  const { match: { params: { type } } } = props;
+  const { history, match: { params: { type } } } = props;
 
   // Get the list of content from content folder
   const contentList = contentOperations.getContentList();
   // Filter the list by category
-  var contentToRender = contentList.filter(x => type == x.category);
+  var contentToRender = contentList.filter(x => type === x.category);
 
   // Render content boxes based on their types
   return contentToRender.map((content) => {
@@ -38,7 +38,7 @@ export default function ContentFilter(props){
         //   return <IconContent 
         //             title={content.title} 
         //             body={content.body} 
-        //             iconName={content.iconName || 'me'}
+        //             iconName={content.iconName}
         //             history={history}
         //             key={content.date}
         //           />

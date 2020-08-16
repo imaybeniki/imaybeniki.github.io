@@ -9,9 +9,7 @@ import Paragraph from "../../atoms/Paragraph/Paragraph";
  * @property {string} title: the title of the content
  * @property {string} body: the string text representing the content
  */
-export default function Content(props){
-  const { body, title } = props;
-
+export default function Content({ body, title }){
   return (
     <div className="outer-content-box">
       <Title title={title} />
