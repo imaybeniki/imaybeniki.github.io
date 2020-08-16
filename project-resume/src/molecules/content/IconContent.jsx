@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Title from "../../atoms/Title/Title";
 import './content.css';
 import Icons from "../icons/Icons";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 /**
  * @summary The homepage renders specified icons into two flexbox rows
@@ -24,12 +25,12 @@ export default function IconContent(
     ? (
       <div className="outer-content-box">
           <Title title={title} />
-          <div className="content-box">
+          <div className="icon-content-box">
               <Icons 
                 icons={[iconName || "me"]}
                 history={history}
               />
-              <p>{body}</p>
+              <Paragraph body={body} />
           </div>
       </div>
     ):

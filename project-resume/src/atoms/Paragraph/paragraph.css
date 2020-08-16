@@ -1,0 +1,10 @@
+
+.content-box{
+    width: 50%;
+    display: flex;
+    align-self: center;
+}
+
+p {
+    font-size: 14px;
+}
