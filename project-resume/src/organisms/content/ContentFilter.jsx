@@ -34,15 +34,15 @@ export default function ContentFilter(props){
                       key={content.date}
                     />
         }
-        // if (content.type === 'icon'){
-        //   return <IconContent 
-        //             title={content.title} 
-        //             body={content.body} 
-        //             iconName={content.iconName}
-        //             history={history}
-        //             key={content.date}
-        //           />
-        // }
+        if (content.type === 'icon'){
+          return <IconContent 
+                    title={content.title} 
+                    body={content.body} 
+                    iconName={content.iconName}
+                    history={history}
+                    key={content.date}
+                  />
+        }
         return <Content 
                   title={content.title} 
                   body={content.body} 
