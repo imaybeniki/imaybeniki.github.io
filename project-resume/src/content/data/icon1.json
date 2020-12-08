@@ -1,8 +1,0 @@
-{
-    "date": "2020-07-17T18:45:01",
-    "category": "meta",
-    "type": "icon",
-    "iconName": "aspen",
-    "title": "Atomic Design",
-    "body": "In this entry, there is an Icon. It's my dog, Aspen! This <Icon> is an atom. The hook <Title> that reads 'Atomic Design', and this <Paragraph>, also atoms, makes up the molecule <IconContent>. Each atom, molecule, and Organism is it's own React Hook. Putting these pieces together from small to large, makes it easier to break out any page you can picture a set of deliberate steps."
-}

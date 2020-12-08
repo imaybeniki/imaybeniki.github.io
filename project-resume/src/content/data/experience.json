@@ -1,0 +1,10 @@
+{
+    "date": "2020-12-17T18:25:00",
+    "category": "experience",
+    "type": "experience",
+    "employer": "Booz Allen Hamilton",
+    "position": "Full Stack Developer - Folio",
+    "start": "2018",
+    "end": "Present",
+    "description": "Migration project includes building a modern, highly responsive, and scalable web application using a ReactJS front end that integrates with a set of .NET Core microservices and MongoDB data stores as a modernization effort of a legacy application. Additional responsibilities include: \n Applying application changes into a production environment, working with government cloud provider. \n Management of internal environments using TeamCity, Octopus Deploy, AWS, and Docker. \n Design new microservices using C#, .NET Core, and MongoDB. \n Present monthly code changes to client and perform task planning using Agile methodologies. \n Migration of data in various forms for onboarding new government agencies."
+}
