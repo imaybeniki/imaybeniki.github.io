@@ -3,7 +3,6 @@ import meta2 from './data/meta2.json';
 import meta3 from './data/meta3.json';
 import meta4 from './data/meta4.json';
 import meta5 from './data/meta5.json';
-import icon1 from './data/icon1.json';
 
 /**
  * @summary a function to concat all JSON files in the data folder into one array
