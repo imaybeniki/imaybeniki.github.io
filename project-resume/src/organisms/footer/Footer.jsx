@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <div>
       <header id="myFooter" className="footer">
-        <FooterContent />
       </header>
     </div>
   );

@@ -11,13 +11,14 @@
 
   h2 {
     width: 100%; 
-    text-align: center; 
+    text-align: left; 
     border-bottom: 3px solid #4281A4; 
     line-height: 0.1em;
     margin: 10px 0 20px; 
     font-size: 40px;
     color: #C1666B;
     font-family: 'Bebas Neue', sans-serif;
+    margin-left: 95px;
   } 
  
   h2 span { 
@@ -29,5 +30,11 @@
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
   }
   

@@ -39,6 +39,11 @@ function Header(props) {
       <header id="myHeader" className="header">
         <Icons history={history} icons={["home"]} />
         <h2><span>{headerText}</span></h2>
+        <div className="social">
+          <Icons history={history} icons={["email"]} />
+          <Icons history={history} icons={["github"]} />
+          <Icons history={history} icons={["linkedin"]} />
+        </div>
       </header>
     </div>
   );

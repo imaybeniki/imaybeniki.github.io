@@ -8,13 +8,16 @@ import { Meta } from '../ImageFiles/Meta/Meta';
 import { Projects } from '../ImageFiles/Projects/Projects';
 import { Home } from '../ImageFiles/Home/Home';
 import { Aspen } from '../ImageFiles/Aspen/Aspen';
+import { LinkedIn } from '../ImageFiles/Social/LinkedIn';
+import { Email } from '../ImageFiles/Social/Email';
+import { GitHub } from '../ImageFiles/Social/GitHub';
 
 /**
  * @summary renders a single icon
  * @prop {object} history from react router
  * @prop {string} icon the name of the icon to render
  */
-export function NavButton({ history, icon }) {
+export function NavButton({ history, icon, onClick }) {
 
     const pngOptions = {
         aspen: Aspen,
@@ -25,6 +28,10 @@ export function NavButton({ history, icon }) {
         meta: Meta,
         projects: Projects,
         home: Home,
+        linkedin: LinkedIn,
+        email: Email,
+        github: GitHub,
+
     }
 
     if (!pngOptions[icon]) return <React.Empty />;
@@ -32,8 +39,8 @@ export function NavButton({ history, icon }) {
     const Icon = pngOptions[icon];
     return (
         <div
-            onClick={() => history.replace(`/project-resume/${icon}`)}
-            onKeyPress={() => history.replace(`/project-resume/${icon}`)}
+            onClick={() => onClick || history.replace(`/project-resume/${icon}`)}
+            onKeyPress={() => onClick || history.replace(`/project-resume/${icon}`)}
         >
             <Icon icon={`${icon}`} />
         </div>          
@@ -42,5 +49,6 @@ export function NavButton({ history, icon }) {
 
 NavButton.propTypes = {
     history: PropTypes.object.isRequired,
-    icon: PropTypes.string
+    icon: PropTypes.string,
+    onClick: PropTypes.func
 }

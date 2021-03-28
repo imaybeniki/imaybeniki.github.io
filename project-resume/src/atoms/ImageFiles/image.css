@@ -20,15 +20,7 @@
 }
 
 h3 {
-    color: #C1666B;
-    visibility: hidden;
-    opacity: 0;
+    margin-left: 50px;
+    color: #363440;
     font-size: 25px;
-
-    transition: opacity .2s, visibility .2s;
-  }
-  
-  .container:hover h3 {
-    visibility: visible;
-    opacity: 1;
   }
